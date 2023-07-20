@@ -8,9 +8,7 @@ hide_table_of_contents: true
 
 ## What is Upsolver
 
-[Upsolver](https://upsolver.com) enables you to use familiar SQL syntax to quickly build and deploy data pipelines, powered by a stream processing engine designed for cloud data lakes.
-
-[SQLake](https://docs.upsolver.com/sqlake) is Upsolvers new UI and SQL console allowing to execute commands and monitor pipelines in the UI. It also includes freee trial and access to variety of examples and tutorials.
+[Upsolver](https://upsolver.com) enables you to use familiar SQL syntax to quickly build and deploy data pipelines, powered by a stream processing engine designed for cloud data lakes. Upsolver has own UI with SQL console allowing to execute commands and monitor pipelines in the UI. It also includes free trial and access to variety of examples and tutorials.
 
 ## Installation
 
@@ -125,7 +123,7 @@ dbt debug
 | seed | not supported |
 | run-operation | supported |
 
-### Supported Upsolver SQLake functionality
+### Supported Upsolver functionality
 
 | COMMAND | STATE | MATERIALIZED |
 | ------ | ------ | ------ |

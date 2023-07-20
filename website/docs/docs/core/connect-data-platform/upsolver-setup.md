@@ -1,22 +1,20 @@
 ---
 title: "Upsolver setup"
-description: "Read this guide to learn about the Upsolver SQLake setup in dbt."
+description: "Read this guide to learn how to configure Upsolver with dbt."
 id: "upsolver-setup"
 meta:
   maintained_by: Upsolver Team
-  authors: 'Upsolver Team'
+  authors: Upsolver Team
   github_repo: 'Upsolver/dbt-upsolver'
   pypi_package: 'dbt-upsolver'
   min_core_version: 'v1.5.0'
   cloud_support: Not Supported
-  min_supported_version: 'n/a'
+  min_supported_version: 'v1.5.21'
   slack_channel_name: 'n/a'
   slack_channel_link: 'n/a'
   platform_name: 'Upsolver'
   config_page: '/reference/resource-configs/upsolver-configs'
 ---
-
-<Snippet src="warehouse-setups-cloud-callout" />
 
 <h2> Overview of {frontMatter.meta.pypi_package} </h2>
 
@@ -83,4 +81,4 @@ The configs for Upsolver targets are shown below.
 | user | Yes | The user to log in as |
 | database | Yes | The database that dbt should create models in |
 | schema | Yes | The schema to build models into by default |
-| api_url | Yes | The API url to connect. Common value ```https&#58;://mt-api-prod.upsolver.com``` |
+| api_url | Yes | The API url to connect. Common value ```https://mt-api-prod.upsolver.com``` |
