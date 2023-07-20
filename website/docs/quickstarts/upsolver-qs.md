@@ -1,60 +1,34 @@
 ---
-title: "Quickstart for dbt Cloud and Upsolver"
+title: "Quickstart for dbt Core and Upsolver"
 id: "upsolver"
 platform: 'dbt-core'
 icon: 'upsolver'
 hide_table_of_contents: true
 ---
 
-# Using Upsolver udapter for dbt
-
-- [Using Upsolver udapter for dbt](#using-upsolver-udapter-for-dbt)
-  - [What is Upsolver](#what-is-upsolver)
-  - [SQLake](#sqlake)
-  - [Getting started](#getting-started)
-    - [Install dbt-upsolver adapter:](#install-dbt-upsolver-adapter)
-    - [Make sure the adapter is installed:](#make-sure-the-adapter-is-installed)
-      - [Expected result:](#expected-result)
-    - [Register Upsolver account](#register-upsolver-account)
-    - [Create API token](#create-api-token)
-    - [Get your user name, database and schema](#get-your-user-name-database-and-schema)
-    - [Create new dbt-upsolver project](#create-new-dbt-upsolver-project)
-      - [profiles.yml](#profilesyml)
-    - [Check connection](#check-connection)
-    - [Supported dbt commands](#supported-dbt-commands)
-    - [Supported Upsolver SQLake functionality](#supported-upsolver-sqlake-functionality)
-  - [SQL connections](#sql-connections)
-  - [SQL copy job](#sql-copy-job)
-  - [SQL insert job](#sql-insert-job)
-  - [SQL merge job](#sql-merge-job)
-  - [SQL materialized views](#sql-materialized-views)
-  - [Projects examples](#projects-examples)
-
 ## What is Upsolver
 
-[Upsolver](https://upsolver.com) enables you to use familiar SQL syntaxto quickly build and deploy data pipelines, powered by a stream processing engine designed for cloud data lakes.
-
-## SQLake
+[Upsolver](https://upsolver.com) enables you to use familiar SQL syntax to quickly build and deploy data pipelines, powered by a stream processing engine designed for cloud data lakes.
 
 [SQLake](https://docs.upsolver.com/sqlake) is Upsolvers new UI and SQL console allowing to execute commands and monitor pipelines in the UI. It also includes freee trial and access to variety of examples and tutorials.
 
-## Getting started  
+## Installation
 
-### Install dbt-upsolver adapter:
+### Install dbt-upsolver adapter
 
 ```sh
  pip install  dbt-upsolver
 ```
 
-### Make sure the adapter is installed:
+### Make sure the adapter is installed
 
 ```sh
 dbt --version
 ```
 
-#### Expected result:
+### Expected result
 
-```
+```sh
 Core:
   - installed: <version>
   - latest:    <version>
@@ -62,7 +36,7 @@ Plugins:
   - upsolver: <version>
 ```
 
-### Register Upsolver account
+## Upsolver account, API token, datsabase, schema
 
 For registeration navigate to [SQL Lake Sign Up form](https://sqlake.upsolver.com/signup). You'll have access to SQL workbench with examples and tutorials after completing the registration.
 
@@ -78,11 +52,11 @@ Then click "Generate" new token and save it for future use.
 
 ### Get your user name, database and schema
 
-For **user name** navigate to **Settings** -> **User details** and copy user name
-For **database** and **schema** navigate to **Worksheets** and click **New**.
-You will find **database name** and **schema(catalog) name** under **Entities panel**
+- For **user name** navigate to **Settings** -> **User details** and copy user name
+- For **database** and **schema** navigate to **Worksheets** and click **New**.
+- You will find **database name** and **schema(catalog) name** under **Entities panel**
 
-### Create new dbt-upsolver project
+## dbt-upsolver project
 
 ```sh
 dbt init <project_name>
@@ -103,9 +77,10 @@ schema (default schema): <schema>
 threads (1 or more) [1]: <number>
 ```
 
-#### profiles.yml
+### profiles.yml
 
-`profiles.yml` location usually is `/Users/<user>/.dbt/profiles.yml` on mac and `/home/<user>/.dbt/profiles.yml` on Linux
+- On mac `profiles.yml` location usually is `/Users/<user>/.dbt/profiles.yml`
+- On Linux `/home/<user>/.dbt/profiles.yml`
 
 ```yml
 project_name:
@@ -126,6 +101,8 @@ project_name:
 ```sh
 dbt debug
 ```
+
+## Supported Commands
 
 ### Supported dbt commands
 

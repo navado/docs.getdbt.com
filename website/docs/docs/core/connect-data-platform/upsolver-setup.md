@@ -8,7 +8,7 @@ meta:
   github_repo: 'Upsolver/dbt-upsolver'
   pypi_package: 'dbt-upsolver'
   min_core_version: 'v1.5.0'
-  cloud_support: 'Not Supported'
+  cloud_support: Not Supported
   min_supported_version: 'n/a'
   slack_channel_name: 'n/a'
   slack_channel_link: 'n/a'

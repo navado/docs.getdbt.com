@@ -583,6 +583,7 @@ const sidebarSettings = {
         "reference/resource-configs/doris-configs",
         "reference/resource-configs/fal-configs",
         "reference/resource-configs/oracle-configs",
+        "reference/resource-configs/upsolver-configs",
       ],
     },
     {
